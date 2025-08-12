@@ -171,6 +171,10 @@
     .card:hover {
       transform: translateY(-5px);
     }
+    /* "거래 용어" 카드 스타일 (원본) */
+    .gy-item { /* 기존 gy-item 유지 */
+    }
+
     .image {
       width: 60px;
       height: 60px;
@@ -179,6 +183,13 @@
       object-fit: cover;
       flex-shrink: 0;
     }
+    /* "거래 용어" 카드들의 이미지 크기 확대 */
+    .gy-item .image { /* gy-item 이미지 크기 125px로 변경 */
+      width: 140px;
+      height: 140px;
+      margin-right: 15px; /* 이미지와 텍스트 사이 간격 조정 (원래 값으로 복원) */
+    }
+
     .info {
       display: grid;
       grid-template-columns: repeat(2, auto);
@@ -4282,6 +4293,107 @@
 
     <p class="text">1 - 탑승물 / 2 - 병사</p>
 
+  </div>
+
+  <h1 class="page-title">거래 용어</h1>
+  <div class="container" id="gyContainer">
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/hIZmc32.png">
+      <div class="info">
+        <h2>W</h2>
+        <div class="info-item"><strong>“Win”</strong></div>
+        <br>
+        <div class="info-item">거래에서 당신이 이득일 때.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/hIZmc32.png">
+      <div class="info">
+        <h2>F</h2>
+        <div class="info-item"><strong>“Fair”</strong></div>
+        <br>
+        <div class="info-item">양쪽 아이템의 가치가 유사할 때.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/hIZmc32.png">
+      <div class="info">
+        <h2>L</h2>
+        <div class="info-item"><strong>“Lose”</strong></div>
+        <br>
+        <div class="info-item">거래에서 당신이 손해일 때.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/xA3vUzP.png">
+      <div class="info">
+        <h2>LF</h2>
+        <div class="info-item"><strong>“Looking For”</strong></div>
+        <br>
+        <div class="info-item">e.g., LF (아이템)
+        <br>
+        (아이템)을(를) 찾고 있음.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/xA3vUzP.png">
+      <div class="info">
+        <h2>NLF</h2>
+        <div class="info-item"><strong>“Not Looking For”</strong></div>
+        <br>
+        <div class="info-item">e.g., NLF (아이템)
+        <br>
+        (아이템)을(를) 찾고 있지 않음.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/xA3vUzP.png">
+      <div class="info">
+        <h2>MLF</h2>
+        <div class="info-item"><strong>“Mostly Looking For”</strong></div>
+        <br>
+        <div class="info-item">e.g., MLF (아이템)
+        <br>
+        (아이템)을(를) 주로 찾고 있음.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/hIZmc32.png">
+      <div class="info">
+        <h2>Tr</h2>
+        <div class="info-item"><strong>“Trading”</strong></div>
+        <br>
+        <div class="info-item">e.g., Tr (아이템)
+        <br>
+        거래의 줄임말.</div>
+      </div>
+    </div>
+
+    <div class="card gy-item">
+      <img class="image" src="https://i.imgur.com/hIZmc32.png">
+      <div class="info">
+        <h2>프레시(Fresh)</h2>
+        <div class="info-item">퓨전 X, 레벨도 올리지 않고,
+        <br>
+        XP도 차 있지 않은 아이템.</div>
+        <br>
+        <div class="info-item"><strong>프레시 아이템이 그렇지 않은
+        <br>
+        것보다 가치가 높을 때도 있다.</strong></div>
+      </div>
+    </div>
+
+  </div>
+  <div id="gyNoResultsMessage" class="no-results-message">검색 결과가 없습니다.</div>
+
+  <div>
     <p class="text" style="margin-top: 130px;">미완성입니다.</p>
     <p class="text">작성자: Skarey(@ScareSkarey)</p>
     <p class="text">추가 기여: <a href="http://n0t.kro.kr/" target="_blank" style="text-decoration: none;">N.O.T.(No Ordinary Team)</a></p>
@@ -4294,13 +4406,15 @@
     document.addEventListener('DOMContentLoaded', function() {
       const searchInput = document.getElementById('searchInput');
       const leContainer = document.getElementById('leContainer');
-      const exoticContainer = document.getElementById('exoticContainer');
+      const Container = document.getElementById('exoticContainer');
       const legendaryContainer = document.getElementById('legendaryContainer');
       const epicContainer = document.getElementById('epicContainer');
+      const gyContainer = document.getElementById('gyContainer');
       const leNoResultsMessage = document.getElementById('leNoResultsMessage');
       const exoticNoResultsMessage = document.getElementById('exoticNoResultsMessage');
       const legendaryNoResultsMessage = document.getElementById('legendaryNoResultsMessage');
       const epicNoResultsMessage = document.getElementById('epicNoResultsMessage');
+      const gyNoResultsMessage = document.getElementById('gyNoResultsMessage');
       const themeToggle = document.getElementById('themeToggle');
       const scrollToTopBtn = document.getElementById('scrollToTopBtn');
       const scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
@@ -4352,6 +4466,12 @@
         let epicResultsFound = false;
 
         allCards.forEach(card => {
+          // GY 가치표의 카드는 검색 대상에서 제외
+          if (gyContainer.contains(card)) {
+            card.style.display = 'flex'; // 항상 표시
+            return;
+          }
+
           const titleElement = card.querySelector('h2');
           const subTitleElement = card.querySelector('.sub-title'); // 부 제목 엘리먼트 선택
           
