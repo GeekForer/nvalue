@@ -4173,9 +4173,14 @@
 
         allCards.forEach(card => {
           const titleElement = card.querySelector('h2');
+          const subTitleElement = card.querySelector('.sub-title'); // 부 제목 엘리먼트 선택
+          
           if (titleElement) {
             const title = titleElement.textContent.toLowerCase();
-            if (title.includes(query)) {
+            const subTitle = subTitleElement ? subTitleElement.textContent.toLowerCase() : ''; // 부 제목이 없으면 빈 문자열 할당
+            
+            // 주 제목 또는 부 제목에 검색어가 포함되어 있으면 표시
+            if (title.includes(query) || subTitle.includes(query)) {
               card.style.display = 'flex';
               if (leContainer.contains(card)) {
                 leResultsFound = true;
