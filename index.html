@@ -22,7 +22,8 @@
       --bg-color: #f0f2f5;
       --card-bg: #ffffff;
       --text-color: #333;
-      --subtitle-color: #555;
+      --subtitle-color: #333; /* 라이트 모드에서 보조 이름 색상을 #333333으로 변경 */
+      --info-item-color: #555; /* 정보 텍스트 색상 분리 */
       --border-color: #e0e0e0;
       --table-header-bg: #2c3e50;
       --table-header-text: white;
@@ -41,7 +42,8 @@
       --bg-color: #1a1a1a;
       --card-bg: #2d2d2d;
       --text-color: #e0e0e0;
-      --subtitle-color: #b0b0b0;
+      --subtitle-color: #e0e0e0; /* 다크 모드에서 보조 이름 색상을 #e0e0e0으로 변경 */
+      --info-item-color: #b0b0b0; /* 정보 텍스트 색상을 #b0b0b0으로 변경 */
       --border-color: #3d3d3d;
       --table-header-bg: #1c1c1c;
       --table-header-text: #e0e0e0;
@@ -209,7 +211,7 @@
     .info-item {
       white-space: nowrap;
       font-size: clamp(0.75em, 2vw, 0.85em);
-      color: var(--subtitle-color); /* 변수 사용 */
+      color: var(--info-item-color); /* 정보 텍스트 색상 분리 */
       transition: color 0.3s ease; /* 전환 효과 */
     }
     .icon {
@@ -526,7 +528,7 @@
       <img class="image" src="https://i.imgur.com/1OndZT2.png">
       <div class="info">
         <h2>LE BISMARCK(G)</h2>
-        <span class="sub-title" style="color: #333333;">LE 골드 비스마르크</span>
+        <span class="sub-title">LE 골드 비스마르크</span>
         <div class="info-item">가치: 2.5M</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -540,7 +542,7 @@
       <img class="image" src="https://i.imgur.com/zv3MPZS.png">
       <div class="info">
         <h2>Imperial Tank (S)</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 임페리얼 탱크</span>
+        <span class="sub-title">슈퍼 임페리얼 탱크</span>
         <div class="info-item">가치: 2M</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -554,7 +556,7 @@
       <img class="image" src="https://i.imgur.com/mtmmOVN.png">
       <div class="info">
         <h2>LE Blackbird</h2>
-        <span class="sub-title" style="color: #333333;">LE 블랙버드</span>
+        <span class="sub-title">LE 블랙버드</span>
         <div class="info-item">가치: 1.5M</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -568,7 +570,7 @@
       <img class="image" src="https://i.imgur.com/7YwWKpd.png">
       <div class="info">
         <h2>SeaBreacher-X</h2>
-        <span class="sub-title" style="color: #333333;">씨브리처-X</span>
+        <span class="sub-title">씨브리처-X</span>
         <div class="info-item">가치: 1M</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 9.5/10</div>
@@ -582,7 +584,7 @@
       <img class="image" src="https://i.imgur.com/0v71cNY.png">
       <div class="info">
         <h2>LE Rocket Plane</h2>
-        <span class="sub-title" style="color: #333333;">LE 로켓 플레인</span>
+        <span class="sub-title">LE 로켓 플레인</span>
         <div class="info-item">가치: 800K</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -596,7 +598,7 @@
       <img class="image" src="https://i.imgur.com/mlOk6Xf.png">
       <div class="info">
         <h2>Ratte P1000</h2>
-        <span class="sub-title" style="color: #333333;">라테 P1000</span>
+        <span class="sub-title">라테 P1000</span>
         <div class="info-item">가치: 800K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -610,7 +612,7 @@
       <img class="image" src="https://i.imgur.com/rGuxKyM.png">
       <div class="info">
         <h2>LE Battle Tank</h2>
-        <span class="sub-title" style="color: #333333;">LE 배틀 탱크</span>
+        <span class="sub-title">LE 배틀 탱크</span>
         <div class="info-item">가치: 600K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -624,7 +626,7 @@
       <img class="image" src="https://i.imgur.com/fDQUBAF.png">
       <div class="info">
         <h2>Super A-14</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 A-14</span>
+        <span class="sub-title">슈퍼 A-14</span>
         <div class="info-item">가치: 600K</div>
         <div class="info-item">수요: 9/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -638,7 +640,7 @@
       <img class="image" src="https://i.imgur.com/jKKdqCH.png">
       <div class="info">
         <h2>LE A-10</h2>
-        <span class="sub-title" style="color: #333333;">-</span>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 500K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -652,7 +654,7 @@
       <img class="image" src="https://i.imgur.com/MG0SMvW.png">
       <div class="info">
         <h2>Nuke Mortar Truck</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 모르타르 트럭</span>
+        <span class="sub-title">뉴크 모르타르 트럭</span>
         <div class="info-item">가치: 500K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -666,7 +668,7 @@
       <img class="image" src="https://i.imgur.com/HCXGJMY.png">
       <div class="info">
         <h2>Super F24</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 F24</span>
+        <span class="sub-title">슈퍼 F24</span>
         <div class="info-item">가치: 450K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -680,7 +682,7 @@
       <img class="image" src="https://i.imgur.com/Q07aPeG.png">
       <div class="info">
         <h2>Super Drone Carrier</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 드론 캐리어</span>
+        <span class="sub-title">슈퍼 드론 캐리어</span>
         <div class="info-item">가치: 400K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -694,7 +696,7 @@
       <img class="image" src="https://i.imgur.com/74GzFbv.png">
       <div class="info">
         <h2>LE Cobra (S)</h2>
-        <span class="sub-title" style="color: #333333;">LE 슈퍼 코브라</span>
+        <span class="sub-title">LE 슈퍼 코브라</span>
         <div class="info-item">가치: 400K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -708,7 +710,7 @@
       <img class="image" src="https://i.imgur.com/lyMGXlH.png">
       <div class="info">
         <h2>LE Gold Izumo</h2>
-        <span class="sub-title" style="color: #333333;">LE 골드 이즈모</span>
+        <span class="sub-title">LE 골드 이즈모</span>
         <div class="info-item">가치: 350K</div>
         <div class="info-item">수요: 7.5/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -722,7 +724,7 @@
       <img class="image" src="https://i.imgur.com/TGU7ZRU.png">
       <div class="info">
         <h2>LE_StalkerDrone</h2>
-        <span class="sub-title" style="color: #333333;">LE_스토커드론</span>
+        <span class="sub-title">LE_스토커드론</span>
         <div class="info-item">가치: 80K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -736,7 +738,7 @@
       <img class="image" src="https://i.imgur.com/esaFDl9.png">
       <div class="info">
         <h2>LE_ReaperDrone</h2>
-        <span class="sub-title" style="color: #333333;">LE_리퍼드론</span>
+        <span class="sub-title">LE_리퍼드론</span>
         <div class="info-item">가치: 80K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -750,7 +752,7 @@
       <img class="image" src="https://i.imgur.com/9Z1y5DE.png">
       <div class="info">
         <h2>Nuke Sniper</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 스나이퍼</span>
+        <span class="sub-title">뉴크 스나이퍼</span>
         <div class="info-item">가치: 80K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -764,7 +766,7 @@
       <img class="image" src="https://i.imgur.com/7vi23IX.png">
       <div class="info">
         <h2>Super A50</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 A50</span>
+        <span class="sub-title">슈퍼 A50</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -778,7 +780,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super B21</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 B21</span>
+        <span class="sub-title">슈퍼 B21</span>
         <div class="info-item">가치: 400−600K(？)</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 9/10</div>
@@ -798,7 +800,7 @@
       <img class="image" src="https://i.imgur.com/czI6eCR.png">
       <div class="info">
         <h2>Santa Killer</h2>
-        <span class="sub-title" style="color: #333333;">산타 킬러</span>
+        <span class="sub-title">산타 킬러</span>
         <div class="info-item">가치: 650K−800K(？)</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 10/10</div>
@@ -812,7 +814,7 @@
       <img class="image" src="https://i.imgur.com/6THqVtV.png">
       <div class="info">
         <h2>Nuke XB-70</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 XB-70</span>
+        <span class="sub-title">뉴크 XB-70</span>
         <div class="info-item">가치: 250K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -826,7 +828,7 @@
       <img class="image" src="https://i.imgur.com/k4FtirI.png">
       <div class="info">
         <h2>Super Scorpion</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 스콜피온</span>
+        <span class="sub-title">슈퍼 스콜피온</span>
         <div class="info-item">가치: 200K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 8.5/10</div>
@@ -840,7 +842,7 @@
       <img class="image" src="https://i.imgur.com/KYieA8i.png">
       <div class="info">
         <h2>Super Exofigher</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 엑소파이터</span>
+        <span class="sub-title">슈퍼 엑소파이터</span>
         <div class="info-item">가치: 200K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -854,7 +856,7 @@
       <img class="image" src="https://i.imgur.com/elpnNmg.png">
       <div class="info">
         <h2>Nuke B36</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 B36</span>
+        <span class="sub-title">뉴크 B36</span>
         <div class="info-item">가치: 200K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -868,7 +870,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super X59</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 X59</span>
+        <span class="sub-title">슈퍼 X59</span>
         <div class="info-item">가치: 150K</div>
         <div class="info-item">수요: 10/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -882,7 +884,7 @@
       <img class="image" src="https://i.imgur.com/EyaNa84.png">
       <div class="info">
         <h2>LE BISMARCK</h2>
-        <span class="sub-title" style="color: #333333;">LE 비스마르크</span>
+        <span class="sub-title">LE 비스마르크</span>
         <div class="info-item">가치: 150K</div>
         <div class="info-item">수요: 9/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -896,7 +898,7 @@
       <img class="image" src="https://i.imgur.com/pbdDAuN.png">
       <div class="info">
         <h2>Master Reaper</h2>
-        <span class="sub-title" style="color: #333333;">마스터 리퍼</span>
+        <span class="sub-title">마스터 리퍼</span>
         <div class="info-item">가치: 150K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -910,7 +912,7 @@
       <img class="image" src="https://i.imgur.com/oIRTjdG.png">
       <div class="info">
         <h2>Boss Annihilator</h2>
-        <span class="sub-title" style="color: #333333;">보스 어나이얼레이터</span>
+        <span class="sub-title">보스 어나이얼레이터</span>
         <div class="info-item">가치: 130K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -924,7 +926,7 @@
       <img class="image" src="https://i.imgur.com/wzk8XAH.png">
       <div class="info">
         <h2>S-Tank Railgun</h2>
-        <span class="sub-title" style="color: #333333;">S-탱크 레일건</span>
+        <span class="sub-title">S-탱크 레일건</span>
         <div class="info-item">가치: 130K</div>
         <div class="info-item">수요: 6.5/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -938,7 +940,7 @@
       <img class="image" src="https://i.imgur.com/CFrHu6x.png">
       <div class="info">
         <h2>Super Mig31</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 미그31</span>
+        <span class="sub-title">슈퍼 미그31</span>
         <div class="info-item">가치: 120K</div>
         <div class="info-item">수요: 8.5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -952,7 +954,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Master Warmaul</h2>
-        <span class="sub-title" style="color: #333333;">마스터 워모울</span>
+        <span class="sub-title">마스터 워모울</span>
         <div class="info-item">가치: 100K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -966,7 +968,7 @@
       <img class="image" src="https://i.imgur.com/6ONUcgZ.png">
       <div class="info">
         <h2>Railgun Killer</h2>
-        <span class="sub-title" style="color: #333333;">레일건 킬러</span>
+        <span class="sub-title">레일건 킬러</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -980,7 +982,7 @@
       <img class="image" src="https://i.imgur.com/GCSd0Oa.png">
       <div class="info">
         <h2>Super Prowler</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 프라울러</span>
+        <span class="sub-title">슈퍼 프라울러</span>
         <div class="info-item">가치: 70K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -994,7 +996,7 @@
       <img class="image" src="https://i.imgur.com/cHcLOhS.png">
       <div class="info">
         <h2>Police AHRLAC</h2>
-        <span class="sub-title" style="color: #333333;">폴리스 아를라크</span>
+        <span class="sub-title">폴리스 아를라크</span>
         <div class="info-item">가치: 70K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1008,7 +1010,7 @@
       <img class="image" src="https://i.imgur.com/hLRJSSg.png">
       <div class="info">
         <h2>Super U2</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 U2</span>
+        <span class="sub-title">슈퍼 U2</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1022,7 +1024,7 @@
       <img class="image" src="https://i.imgur.com/En3BD32.png">
       <div class="info">
         <h2>Elite Sturmtank</h2>
-        <span class="sub-title" style="color: #333333;">엘리트 슈투름탄크</span>
+        <span class="sub-title">엘리트 슈투름탄크</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1036,7 +1038,7 @@
       <img class="image" src="https://i.imgur.com/0L7nAcz.png">
       <div class="info">
         <h2>Nuke Railgun Tank</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 레일건 탱크</span>
+        <span class="sub-title">뉴크 레일건 탱크</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1050,7 +1052,7 @@
       <img class="image" src="https://i.imgur.com/FgEwjy2.png">
       <div class="info">
         <h2>Nuke Sub</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 서브</span>
+        <span class="sub-title">뉴크 서브</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -1064,7 +1066,7 @@
       <img class="image" src="https://i.imgur.com/RyTDrqC.png">
       <div class="info">
         <h2>Super B52</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 B52</span>
+        <span class="sub-title">슈퍼 B52</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1078,7 +1080,7 @@
       <img class="image" src="https://i.imgur.com/Kidoc5Q.png">
       <div class="info">
         <h2>Nuke F35</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 F35</span>
+        <span class="sub-title">뉴크 F35</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1092,7 +1094,7 @@
       <img class="image" src="https://i.imgur.com/4F2sBVV.png">
       <div class="info">
         <h2>Imperial Tank</h2>
-        <span class="sub-title" style="color: #333333;">임페리얼 탱크</span>
+        <span class="sub-title">임페리얼 탱크</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1106,7 +1108,7 @@
       <img class="image" src="https://i.imgur.com/CCyOIwr.png">
       <div class="info">
         <h2>Super Harrier</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 해리어</span>
+        <span class="sub-title">슈퍼 해리어</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1120,7 +1122,7 @@
       <img class="image" src="https://i.imgur.com/5PZuO4V.png">
       <div class="info">
         <h2>Super Nova</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 노바</span>
+        <span class="sub-title">슈퍼 노바</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1134,7 +1136,7 @@
       <img class="image" src="https://i.imgur.com/diE8Dua.png">
       <div class="info">
         <h2>Nuke Zeplin-X</h2>
-        <span class="sub-title" style="color: #333333;">뉴크 제플린-X</span>
+        <span class="sub-title">뉴크 제플린-X</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1148,7 +1150,7 @@
       <img class="image" src="https://i.imgur.com/Vsi6uGb.jpeg">
       <div class="info">
         <h2>Skyhammer</h2>
-        <span class="sub-title" style="color: #333333;">스카이해머</span>
+        <span class="sub-title">스카이해머</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1162,7 +1164,7 @@
       <img class="image" src="https://i.imgur.com/udWA0Ri.png">
       <div class="info">
         <h2>Boss Reaper</h2>
-        <span class="sub-title" style="color: #333333;">보스 리퍼</span>
+        <span class="sub-title">보스 리퍼</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 8.5/10</div>
@@ -1176,7 +1178,7 @@
       <img class="image" src="https://i.imgur.com/BiQCN1l.png">
       <div class="info">
         <h2>A-14 Wolf</h2>
-        <span class="sub-title" style="color: #333333;">A-14 울프</span>
+        <span class="sub-title">A-14 울프</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1190,7 +1192,7 @@
       <img class="image" src="https://i.imgur.com/3aTYjya.png">
       <div class="info">
         <h2>Gold Falken</h2>
-        <span class="sub-title" style="color: #333333;">골드 팔켄</span>
+        <span class="sub-title">골드 팔켄</span>
         <div class="info-item">가치: 35K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1204,7 +1206,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SeaBreacher</h2>
-        <span class="sub-title" style="color: #333333;">씨브리처</span>
+        <span class="sub-title">씨브리처</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1218,7 +1220,7 @@
       <img class="image" src="https://i.imgur.com/ZnIvEwO.png">
       <div class="info">
         <h2>CFA44</h2>
-        <span class="sub-title" style="color: #333333;">-</span>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5.5/10</div>
@@ -1232,7 +1234,7 @@
       <img class="image" src="https://i.imgur.com/lxVlo1k.png">
       <div class="info">
         <h2>F24</h2>
-        <span class="sub-title" style="color: #333333;">-</span>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1246,7 +1248,7 @@
       <img class="image" src="https://i.imgur.com/j3PLOeq.png">
       <div class="info">
         <h2>Mortar Truck</h2>
-        <span class="sub-title" style="color: #333333;">모르타르 트럭</span>
+        <span class="sub-title">모르타르 트럭</span>
         <div class="info-item">가치: 25K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1260,7 +1262,7 @@
       <img class="image" src="https://i.imgur.com/vnSNPhm.png">
       <div class="info">
         <h2>Drone Carrier</h2>
-        <span class="sub-title" style="color: #333333;">드론 캐리어</span>
+        <span class="sub-title">드론 캐리어</span>
         <div class="info-item">가치: 25K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1274,7 +1276,7 @@
       <img class="image" src="https://i.imgur.com/h2zj6bR.png">
       <div class="info">
         <h2>LE YAL-1</h2>
-        <span class="sub-title" style="color: #333333;">-</span>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1288,7 +1290,7 @@
       <img class="image" src="https://i.imgur.com/KYC63IQ.png">
       <div class="info">
         <h2>Boss YAL-1</h2>
-        <span class="sub-title" style="color: #333333;">보스 YAL-1</span>
+        <span class="sub-title">보스 YAL-1</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1302,7 +1304,7 @@
       <img class="image" src="https://i.imgur.com/5laUlhV.png">
       <div class="info">
         <h2>Elite Hacker</h2>
-        <span class="sub-title" style="color: #333333;">엘리트 해커</span>
+        <span class="sub-title">엘리트 해커</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1316,7 +1318,7 @@
       <img class="image" src="https://i.imgur.com/Jw9hxvM.png">
       <div class="info">
         <h2>Rad Katyusha</h2>
-        <span class="sub-title" style="color: #333333;">래드 카츄샤</span>
+        <span class="sub-title">래드 카츄샤</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1330,7 +1332,7 @@
       <img class="image" src="https://i.imgur.com/o16yElF.png">
       <div class="info">
         <h2>Boss Viper</h2>
-        <span class="sub-title" style="color: #333333;">보스 바이퍼</span>
+        <span class="sub-title">보스 바이퍼</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -1344,7 +1346,7 @@
       <img class="image" src="https://i.imgur.com/ptn5dO0.png">
       <div class="info">
         <h2>Boss KA-29</h2>
-        <span class="sub-title" style="color: #333333;">보스 KA-29</span>
+        <span class="sub-title">보스 KA-29</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1358,7 +1360,7 @@
       <img class="image" src="https://i.imgur.com/SJO1Aaz.png">
       <div class="info">
         <h2>Boss Sea Tank</h2>
-        <span class="sub-title" style="color: #333333;">보스 씨 탱크</span>
+        <span class="sub-title">보스 씨 탱크</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 9/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -1372,7 +1374,7 @@
       <img class="image" src="https://i.imgur.com/YU3gPl9.png">
       <div class="info">
         <h2>Boss Killer</h2>
-        <span class="sub-title" style="color: #333333;">보스 킬러</span>
+        <span class="sub-title">보스 킬러</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1386,7 +1388,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>A50</h2>
-        <span class="sub-title" style="color: #333333;">-</span>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1400,7 +1402,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super YF1</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 YF1</span>
+        <span class="sub-title">슈퍼 YF1</span>
         <div class="info-item">가치: 50K(？)</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -1414,7 +1416,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Master Hellstorm</h2>
-        <span class="sub-title" style="color: #333333;">마스터 헬스톰</span>
+        <span class="sub-title">마스터 헬스톰</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -1428,7 +1430,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B21 Raider</h2>
-        <span class="sub-title" style="color: #333333;">B21 레이더</span>
+        <span class="sub-title">B21 레이더</span>
         <div class="info-item">가치: 20−30K(？)</div>
         <div class="info-item">수요: 5.5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1449,7 +1451,7 @@
       <img class="image" src="https://i.imgur.com/0dMnneD.png">
       <div class="info">
         <h2>Gold Typhoon</h2>
-        <span class="sub-title" style="color: #333333;">골드 타이푼</span>
+        <span class="sub-title">골드 타이푼</span>
         <div class="info-item">가치: 5M</div>
         <div class="info-item">수요: 7.5/10</div>
         <div class="info-item">희귀성: 10/10</div>
@@ -1463,7 +1465,7 @@
       <img class="image" src="https://i.imgur.com/j0kM6jD.png">
       <div class="info">
         <h2>Apocalypse</h2>
-        <span class="sub-title" style="color: #333333;">아포칼립스</span>
+        <span class="sub-title">아포칼립스</span>
         <div class="info-item">가치: 4.5M</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 10/10</div>
@@ -1477,7 +1479,7 @@
       <img class="image" src="https://i.imgur.com/pngykXs.png">
       <div class="info">
         <h2>Sturmtank</h2>
-        <span class="sub-title" style="color: #333333;">슈투름탄크</span>
+        <span class="sub-title">슈투름탄크</span>
         <div class="info-item">가치: 1M−1.2M(？)</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 9.5/10</div>
@@ -1491,7 +1493,7 @@
       <img class="image" src="https://i.imgur.com/9Yc5nLl.png">
       <div class="info">
         <h2>The Stomper</h2>
-        <span class="sub-title" style="color: #333333;">더 스톰퍼</span>
+        <span class="sub-title">더 스톰퍼</span>
         <div class="info-item">가치:  300K−400K(？)</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1505,7 +1507,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Defiant-X</h2>
-        <span class="sub-title" style="color: #333333;">디파이언트-X</span>
+        <span class="sub-title">디파이언트-X</span>
         <div class="info-item">가치: 170K</div>
         <div class="info-item">수요: 7.5/10</div>
         <div class="info-item">희귀성: 8.5/10</div>
@@ -1519,7 +1521,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super AHRLAC</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 아를라크</span>
+        <span class="sub-title">슈퍼 아를라크</span>
         <div class="info-item">가치: 70K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1533,7 +1535,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Infinity Car</h2>
-        <span class="sub-title" style="color: #333333;">인피니티 카</span>
+        <span class="sub-title">인피니티 카</span>
         <div class="info-item">가치: 60K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1547,7 +1549,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Santa Maus</h2>
-        <span class="sub-title" style="color: #333333;">산타 마우스</span>
+        <span class="sub-title">산타 마우스</span>
         <div class="info-item">가치: 60K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1561,7 +1563,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Astrum</h2>
-        <span class="sub-title" style="color: #333333;">아스트럼</span>
+        <span class="sub-title">아스트럼</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1575,7 +1577,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Pantsir</h2>
-        <span class="sub-title" style="color: #333333;">판치르</span>
+        <span class="sub-title">판치르</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 6.5/10</div>
         <div class="info-item">희귀성: 8/10</div>
@@ -1589,7 +1591,7 @@
       <img class="image" src="https://i.imgur.com/kHNMMol.png">
       <div class="info">
         <h2>Super Raptor</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 랩터</span>
+        <span class="sub-title">슈퍼 랩터</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1603,7 +1605,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super YF23</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 YF23</span>
+        <span class="sub-title">슈퍼 YF23</span>
         <div class="info-item">가치: 50K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1617,7 +1619,7 @@
       <img class="image" src="https://i.imgur.com/iHA4i7E.png">
       <div class="info">
         <h2>Super TOS1</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 TOS1</span>
+        <span class="sub-title">슈퍼 TOS1</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -1631,7 +1633,7 @@
       <img class="image" src="https://i.imgur.com/Ryy8una.png">
       <div class="info">
         <h2>The Annihilator</h2>
-        <span class="sub-title" style="color: #333333;">디 어나이얼레이터</span>
+        <span class="sub-title">디 어나이얼레이터</span>
         <div class="info-item">가치: 40K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1645,7 +1647,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>JS Atago</h2>
-        <span class="sub-title" style="color: #333333;">JS 아타고</span>
+        <span class="sub-title">JS 아타고</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1659,7 +1661,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold B2</h2>
-        <span class="sub-title" style="color: #333333;">골드 B2</span>
+        <span class="sub-title">골드 B2</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1673,7 +1675,7 @@
       <img class="image" src="https://i.imgur.com/8PGcbP4.png">
       <div class="info">
         <h2>Sky Reaper</h2>
-        <span class="sub-title" style="color: #333333;">스카이 리퍼</span>
+        <span class="sub-title">스카이 리퍼</span>
         <div class="info-item">가치: 30K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1687,7 +1689,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Battle Tank</h2>
-        <span class="sub-title" style="color: #333333;">배틀 탱크</span>
+        <span class="sub-title">배틀 탱크</span>
         <div class="info-item">가치: 25K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1701,7 +1703,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Volk</h2>
-        <span class="sub-title" style="color: #333333;">슈퍼 폴크</span>
+        <span class="sub-title">슈퍼 폴크</span>
         <div class="info-item">가치: 25K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1715,7 +1717,7 @@
       <img class="image" src="https://i.imgur.com/VLc5qfy.png">
       <div class="info">
         <h2>S-Tank Gettling</h2>
-        <span class="sub-title" style="color: #333333;">S-탱크 게틀링</span>
+        <span class="sub-title">S-탱크 게틀링</span>
         <div class="info-item">가치: 25K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -1729,7 +1731,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>ATC Silkfire</h2>
-        <span class="sub-title" style="color: #333333;">ATC 실크파이어</span>
+        <span class="sub-title">ATC 실크파이어</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1743,6 +1745,7 @@
       <img class="image" src="https://i.imgur.com/vXXj31v.png">
       <div class="info">
         <h2>Gold MI35</h2>
+        <span class="sub-title">골드 MI35</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1756,6 +1759,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Infinity Blackbird</h2>
+        <span class="sub-title">인피니티 블랙버드</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1770,6 +1774,7 @@
       <div class="info">
         <h2>Pelican</h2>
         <div class="info-item">가치: 20K</div>
+        <span class="sub-title">펠리칸</span>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
         <div class="info-item">성능: 7/10</div>
@@ -1782,6 +1787,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Railgun Destroyer</h2>
+        <span class="sub-title">레일건 디스트로이어</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1795,6 +1801,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Warmaul</h2>
+        <span class="sub-title">워모울</span>
         <div class="info-item">가치: 20K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1808,6 +1815,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>LE Izumo</h2>
+        <span class="sub-title">LE 이즈모</span>
         <div class="info-item">가치: 18K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1821,6 +1829,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>GoldAC119</h2>
+        <span class="sub-title">골드AC119</span>
         <div class="info-item">가치: 18K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -1835,6 +1844,7 @@
       <div class="info">
         <h2>Shocker</h2>
         <div class="info-item">가치: 15K</div>
+        <span class="sub-title">쇼커</span>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 6/10</div>
         <div class="info-item">성능: 10/10</div>
@@ -1847,6 +1857,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Frost Zeplin-X</h2>
+        <span class="sub-title">프로스트 제플린-X</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1860,6 +1871,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B-2 Sleigh</h2>
+        <span class="sub-title">B-2 슬레이</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 6.5/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -1873,6 +1885,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Striker</h2>
+        <span class="sub-title">슈퍼 스트라이커</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1886,6 +1899,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold Pyro Tank</h2>
+        <span class="sub-title">골드 파이로 탱크</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1899,6 +1913,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss Blackbird</h2>
+        <span class="sub-title">보스 블랙버드</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1912,6 +1927,7 @@
       <img class="image" src="https://i.imgur.com/gRxw9HU.png">
       <div class="info">
         <h2>X59</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1925,6 +1941,7 @@
       <img class="image" src="https://i.imgur.com/NjWNfou.png">
       <div class="info">
         <h2>LE Cobra</h2>
+        <span class="sub-title">LE 코브라</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -1938,6 +1955,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Railgun Tank</h2>
+        <span class="sub-title">레일건 탱크</span>
         <div class="info-item">가치: 12K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1951,6 +1969,7 @@
       <img class="image" src="https://i.imgur.com/ElJal2G.png">
       <div class="info">
         <h2>Elite Lancer</h2>
+        <span class="sub-title">엘리트 랜서</span>
         <div class="info-item">가치: 12K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1964,6 +1983,7 @@
       <img class="image" src="https://i.imgur.com/PlzfCfa.png">
       <div class="info">
         <h2>Falken</h2>
+        <span class="sub-title">팔켄</span>
         <div class="info-item">가치: 12K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -1977,6 +1997,7 @@
       <img class="image" src="https://i.imgur.com/rkErLx2.png">
       <div class="info">
         <h2>Douglas A20</h2>
+        <span class="sub-title">더글러스 A20</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 7.5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -1990,6 +2011,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Alicorn</h2>
+        <span class="sub-title">알리콘</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -2003,6 +2025,7 @@
       <img class="image" src="https://i.imgur.com/3s8c9So.png">
       <div class="info">
         <h2>UFO</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -2016,6 +2039,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>YF1</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -2029,6 +2053,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>U2</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6.5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2042,6 +2067,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>ExoFighter</h2>
+        <span class="sub-title">엑소파이터</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2055,6 +2081,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Mig-31</h2>
+        <span class="sub-title">미그-31</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2068,6 +2095,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>EMP F35</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2081,6 +2109,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B52</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2094,6 +2123,7 @@
       <img class="image" src="https://i.imgur.com/spvJY1h.png">
       <div class="info">
         <h2>Zeplin-X</h2>
+        <span class="sub-title">제플린-X</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2107,6 +2137,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>MQ4C</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2120,6 +2151,7 @@
       <img class="image" src="https://i.imgur.com/HGqpmDU.png">
       <div class="info">
         <h2>Police Heli</h2>
+        <span class="sub-title">폴리스 헬리</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2133,6 +2165,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Scorpion</h2>
+        <span class="sub-title">스콜피온</span>
         <div class="info-item">가치: 10K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2146,6 +2179,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Nova</h2>
+        <span class="sub-title">노바</span>
         <div class="info-item">가치: 9K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2159,6 +2193,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Phantom Jet</h2>
+        <span class="sub-title">팬텀 제트</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2172,6 +2207,7 @@
       <img class="image" src="https://i.imgur.com/ajikr9R.png">
       <div class="info">
         <h2>XB-70</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 8/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2185,6 +2221,7 @@
       <img class="image" src="https://i.imgur.com/9dfc38z.png">
       <div class="info">
         <h2>Gold MIG-29</h2>
+        <span class="sub-title">골드 미그-29</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2198,6 +2235,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Prowler</h2>
+        <span class="sub-title">프라울러</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2211,6 +2249,7 @@
       <img class="image" src="https://i.imgur.com/46L2Aaf.png">
       <div class="info">
         <h2>Super Half-track</h2>
+        <span class="sub-title">슈퍼 하프트랙</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2224,6 +2263,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SU34</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2237,6 +2277,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Calzone Cannon</h2>
+        <span class="sub-title">칼조네 캐논</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 7/10</div>
@@ -2250,6 +2291,7 @@
       <img class="image" src="https://i.imgur.com/ZTwRzHn.png">
       <div class="info">
         <h2>Zombie AC130</h2>
+        <span class="sub-title">좀비 AC130</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2263,6 +2305,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Darkstar</h2>
+        <span class="sub-title">슈퍼 다크스타</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2276,6 +2319,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B36</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2289,6 +2333,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Patria</h2>
+        <span class="sub-title">슈퍼 파트리아</span>
         <div class="info-item">가치: 7K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2302,6 +2347,7 @@
       <img class="image" src="https://i.imgur.com/zUhmEMz.png">
       <div class="info">
         <h2>Stealth Boat</h2>
+        <span class="sub-title">스텔스 보트</span>
         <div class="info-item">가치: 7K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2315,6 +2361,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>jagdpanther</h2>
+        <span class="sub-title">야크트판터</span>
         <div class="info-item">가치: 7K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2328,6 +2375,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold KA52</h2>
+        <span class="sub-title">골드 KA52</span>
         <div class="info-item">가치: 7K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2341,6 +2389,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>NGAD</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 7K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2354,6 +2403,7 @@
       <img class="image" src="https://i.imgur.com/Uk7tsth.png">
       <div class="info">
         <h2>USS Independence</h2>
+        <span class="sub-title">USS 인디펜던스</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2367,6 +2417,7 @@
       <img class="image" src="https://i.imgur.com/QMU5avE.png">
       <div class="info">
         <h2>Skynex</h2>
+        <span class="sub-title">스카이넥스</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2380,6 +2431,7 @@
       <img class="image" src="https://i.imgur.com/bqPPcg7.png">
       <div class="info">
         <h2>Zumwalt</h2>
+        <span class="sub-title">줌왈트</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2393,6 +2445,7 @@
       <img class="image" src="https://i.imgur.com/rnHuP3s.png">
       <div class="info">
         <h2>War Ship</h2>
+        <span class="sub-title">워 쉽</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2406,6 +2459,7 @@
       <img class="image" src="https://i.imgur.com/G0TXUBe.png">
       <div class="info">
         <h2>Tralalero</h2>
+        <span class="sub-title">트랄랄레로</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6.5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2419,6 +2473,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Bobardino</h2>
+        <span class="sub-title">봄바르디노</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2432,6 +2487,7 @@
       <img class="image" src="https://i.imgur.com/LPXuxvM.png">
       <div class="info">
         <h2>B2 Liberty</h2>
+        <span class="sub-title">B2 리버티</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2445,6 +2501,7 @@
       <img class="image" src="https://i.imgur.com/4AO6Hdh.png">
       <div class="info">
         <h2>Leopard 2A7</h2>
+        <span class="sub-title">레오파르트 2A7</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2458,6 +2515,7 @@
       <img class="image" src="https://i.imgur.com/Iqgs8Hn.png">
       <div class="info">
         <h2>Manti Core</h2>
+        <span class="sub-title">만티 코어</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5.5/10</div>
@@ -2471,6 +2529,7 @@
       <img class="image" src="https://i.imgur.com/74ygw88.png">
       <div class="info">
         <h2>RT01</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2484,6 +2543,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SM-27</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2497,6 +2557,7 @@
       <img class="image" src="https://i.imgur.com/9ShkaVK.png">
       <div class="info">
         <h2>Golden Interceptor</h2>
+        <span class="sub-title">골든 인터셉터</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2510,6 +2571,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super F14</h2>
+        <span class="sub-title">슈퍼 F14</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -2523,6 +2585,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B1 Lancer</h2>
+        <span class="sub-title">B1 랜서</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2535,7 +2598,8 @@
     <div class="card">
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
-        <h2>Cenbera</h2>
+        <h2>Canberra</h2>
+        <span class="sub-title">캔버라</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5.5/10</div>
@@ -2549,6 +2613,7 @@
       <img class="image" src="https://i.imgur.com/4nXSLMM.png">
       <div class="info">
         <h2>Police APC</h2>
+        <span class="sub-title">폴리스 APC</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2562,6 +2627,7 @@
       <img class="image" src="https://i.imgur.com/U0m8Pen.png">
       <div class="info">
         <h2>Police Jeep</h2>
+        <span class="sub-title">폴리스 지프</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2575,6 +2641,7 @@
       <img class="image" src="https://i.imgur.com/RoiNP4M.png">
       <div class="info">
         <h2>Shopping Cart</h2>
+        <span class="sub-title">쇼핑 카트</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2588,6 +2655,7 @@
       <img class="image" src="https://i.imgur.com/tLgLR4R.png">
       <div class="info">
         <h2>Comanche</h2>
+        <span class="sub-title">코만치</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2601,6 +2669,7 @@
       <img class="image" src="https://i.imgur.com/xF1z975.png">
       <div class="info">
         <h2>TV Tank</h2>
+        <span class="sub-title">TV 탱크</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2614,6 +2683,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Strela</h2>
+        <span class="sub-title">스트렐라</span>
         <div class="info-item">가치: 6K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6.5/10</div>
@@ -2627,6 +2697,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Liberty Foch</h2>
+        <span class="sub-title">리버티 포슈</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2640,6 +2711,7 @@
       <img class="image" src="https://i.imgur.com/mJWuvxH.png">
       <div class="info">
         <h2>Typhoon</h2>
+        <span class="sub-title">타이푼</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2653,6 +2725,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Surrogat</h2>
+        <span class="sub-title">써로게이트</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2666,6 +2739,7 @@
       <img class="image" src="https://i.imgur.com/417Mhq4.png">
       <div class="info">
         <h2>Zubr</h2>
+        <span class="sub-title">주브르</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2679,6 +2753,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Demolisher</h2>
+        <span class="sub-title">디몰리셔</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2692,6 +2767,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>MZKT</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2705,6 +2781,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>K9 Demon</h2>
+        <span class="sub-title">K9 데몬</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2718,6 +2795,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>C17</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2731,6 +2809,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Miron</h2>
+        <span class="sub-title">미론</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2744,6 +2823,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold F35</h2>
+        <span class="sub-title">골드 F35</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2757,6 +2837,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Panther</h2>
+        <span class="sub-title">슈퍼 판터</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2770,6 +2851,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss SU57</h2>
+        <span class="sub-title">보스 SU57</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2783,6 +2865,7 @@
       <img class="image" src="https://i.imgur.com/opRUtDG.png">
       <div class="info">
         <h2>B2 Spirit</h2>
+        <span class="sub-title">B2 스피릿</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 7/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2796,6 +2879,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Armored Corvette</h2>
+        <span class="sub-title">아머드 콜벳</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -2809,6 +2893,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Patriot Boat</h2>
+        <span class="sub-title">패트리어트 보트</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2822,6 +2907,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>T90-M</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -2835,6 +2921,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Bradley</h2>
+        <span class="sub-title">브래들리</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5.5/10</div>
@@ -2848,6 +2935,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Patriot</h2>
+        <span class="sub-title">패트리어트</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2861,6 +2949,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Typhoon-X</h2>
+        <span class="sub-title">타이푼-X</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2874,6 +2963,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>bf109</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2887,6 +2977,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>boss J20</h2>
+        <span class="sub-title">보스 J20</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5.5/10</div>
@@ -2900,6 +2991,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>ME262</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 4K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2913,6 +3005,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>F4</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2926,6 +3019,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SU25</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2939,6 +3033,7 @@
       <img class="image" src="https://i.imgur.com/foZ9Fci.png">
       <div class="info">
         <h2>Vulcan</h2>
+        <span class="sub-title">벌컨</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2952,6 +3047,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Foch 155</h2>
+        <span class="sub-title">포슈 155</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -2965,6 +3061,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>AT6</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -2978,6 +3075,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold PL01</h2>
+        <span class="sub-title">골드 PL01</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -2991,6 +3089,7 @@
       <img class="image" src="https://i.imgur.com/23SH924.png">
       <div class="info">
         <h2>Medic Truck</h2>
+        <span class="sub-title">메딕 트럭</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4.5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3004,6 +3103,7 @@
       <img class="image" src="https://i.imgur.com/jYLl0jA.png">
       <div class="info">
         <h2>Super Edjer</h2>
+        <span class="sub-title">슈퍼 에저</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4.5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3017,6 +3117,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Old Hovercraft</h2>
+        <span class="sub-title">올드 호버크래프트</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3030,6 +3131,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gripen</h2>
+        <span class="sub-title">그리펜</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3043,6 +3145,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super F18</h2>
+        <span class="sub-title">슈퍼 F18</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3056,6 +3159,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Wulf</h2>
+        <span class="sub-title">울프</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3069,6 +3173,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Platinum F16</h2>
+        <span class="sub-title">플레티넘 F16</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3082,6 +3187,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Tu22M</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3095,6 +3201,7 @@
       <img class="image" src="https://i.imgur.com/pY9CFk9.png">
       <div class="info">
         <h2>Puma Tank</h2>
+        <span class="sub-title">푸마 탱크</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3108,6 +3215,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super APC</h2>
+        <span class="sub-title">슈퍼 APC</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/5</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3121,6 +3229,7 @@
       <img class="image" src="https://i.imgur.com/zgsVC4a.png">
       <div class="info">
         <h2>F16 Falcon</h2>
+        <span class="sub-title">F16 팔콘</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -3134,6 +3243,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold Spitfire</h2>
+        <span class="sub-title">골드 스핏파이어</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3147,6 +3257,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Rafale</h2>
+        <span class="sub-title">라팔</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3160,6 +3271,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>F5</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3173,6 +3285,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss F117</h2>
+        <span class="sub-title">보스 F117</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3186,6 +3299,7 @@
       <img class="image" src="https://i.imgur.com/Gl9yoLa.png">
       <div class="info">
         <h2>Weiner Wagon</h2>
+        <span class="sub-title">위너 왜건</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3199,6 +3313,7 @@
       <img class="image" src="https://i.imgur.com/NKJNqaT.png">
       <div class="info">
         <h2>ArmoredAPC</h2>
+        <span class="sub-title">아머드APC</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3212,6 +3327,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Kuznetsov</h2>
+        <span class="sub-title">쿠즈네초프</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3225,6 +3341,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Nimitz</h2>
+        <span class="sub-title">니미츠</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3238,6 +3355,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super F15</h2>
+        <span class="sub-title">슈퍼 F15</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3251,6 +3369,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>HX3</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 3.5/10</div>
@@ -3264,6 +3383,7 @@
       <img class="image" src="https://i.imgur.com/zX0x86q.png">
       <div class="info">
         <h2>PHL03</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3276,7 +3396,8 @@
     <div class="card">
       <img class="image" src="https://i.imgur.com/m83NO5R.png">
       <div class="info">
-        <h2>Reapair Drone</h2>
+        <h2>Repair Drone</h2>
+        <span class="sub-title">리페어 드론</span>
         <div class="info-item">가치: 1.5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3290,6 +3411,7 @@
       <img class="image" src="https://i.imgur.com/XjGpBX6.png">
       <div class="info">
         <h2>Chinook</h2>
+        <span class="sub-title">치누크</span>
         <div class="info-item">가치: 1.5K</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3303,6 +3425,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Bomber</h2>
+        <span class="sub-title">봄버</span>
         <div class="info-item">가치: 1.5K</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3316,6 +3439,7 @@
       <img class="image" src="https://i.imgur.com/p1D2FN3.png">
       <div class="info">
         <h2>Gold AC130</h2>
+        <span class="sub-title">골드 AC130</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3.5/10</div>
         <div class="info-item">희귀성: 3/10</div>
@@ -3329,6 +3453,7 @@
       <img class="image" src="https://i.imgur.com/L4Zs0ir.png">
       <div class="info">
         <h2>F15</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 9/10</div>
         <div class="info-item">희귀성: 2/10</div>
@@ -3342,6 +3467,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>PL01 Liberty</h2>
+        <span class="sub-title">PL01 리버티</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3355,6 +3481,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>B1 Liberty</h2>
+        <span class="sub-title">B1 리버티</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 6/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3368,6 +3495,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>C17 Liberty</h2>
+        <span class="sub-title">C17 리버티</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3381,6 +3509,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold M10</h2>
+        <span class="sub-title">골드 M10</span>
         <div class="info-item">가치: 10K−20K(？)</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -3394,6 +3523,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold TKS-20</h2>
+        <span class="sub-title">골드 TKS-20</span>
         <div class="info-item">가치: 10K−20K(？)</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -3407,6 +3537,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Hellstorm</h2>
+        <span class="sub-title">헬스톰</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -3420,6 +3551,7 @@
       <img class="image" src="https://i.imgur.com/gVAan8G.png">
       <div class="info">
         <h2>GoJaGiRin</h2>
+        <span class="sub-title">고자기린</span>
         <div class="info-item">가치: <strong>qudtls</strong></div>
         <div class="info-item">수요: <strong>*TRASH*</strong>/10</div>
         <div class="info-item">희귀성: <strong>999M</strong>/10</div>
@@ -3433,6 +3565,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Weiner Wagon(G)</h2>
+        <span class="sub-title">골드 위너 왜건</span>
         <div class="info-item">가치: <strong>999T</strong></div>
         <div class="info-item">수요: <strong>999M</strong>/10</div>
         <div class="info-item">희귀성: <strong>999M</strong>/10</div>
@@ -3453,6 +3586,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>MI-28</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 3/10</div>
@@ -3466,6 +3600,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss MI-28</h2>
+        <span class="sub-title">보스 MI-28</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3479,6 +3614,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Defiant</h2>
+        <span class="sub-title">디파이언트</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3492,6 +3628,7 @@
       <img class="image" src="https://i.imgur.com/BDf5bkk.png">
       <div class="info">
         <h2>Recon Heli</h2>
+        <span class="sub-title">리칸 헬리</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3505,6 +3642,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>KA-52</h2>
+        <span class="sub-title">KA-52</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 2/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3518,6 +3656,7 @@
       <img class="image" src="https://i.imgur.com/qFh8T5n.png">
       <div class="info">
         <h2>MI35</h2>
+        <span class="sub-title">MI35</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 7.5/10</div>
@@ -3531,6 +3670,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Stealth F-35</h2>
+        <span class="sub-title">스텔스 F-35</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3544,6 +3684,7 @@
       <img class="image" src="https://i.imgur.com/VbgPw7v.png">
       <div class="info">
         <h2>F117</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 300</div>
         <div class="info-item">수요: 1/10</div>
         <div class="info-item">희귀성: 2/10</div>
@@ -3557,6 +3698,7 @@
       <img class="image" src="https://i.imgur.com/Wz083dg.png">
       <div class="info">
         <h2>Toy B-17</h2>
+        <span class="sub-title">토이 B-17</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3570,6 +3712,7 @@
       <img class="image" src="https://i.imgur.com/J4zTmZ9.png">
       <div class="info">
         <h2>AC119</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3583,6 +3726,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SU-57</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3596,6 +3740,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>J20</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3609,6 +3754,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Mig29</h2>
+        <span class="sub-title">미그29</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3622,6 +3768,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>AHRLAC</h2>
+        <span class="sub-title">아를라크</span>
         <div class="info-item">가치: 8K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3635,6 +3782,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Darkstar</h2>
+        <span class="sub-title">다크스타</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3648,6 +3796,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Gold F22</h2>
+        <span class="sub-title">골드 F22</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3661,6 +3810,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Typhoon</h2>
+        <span class="sub-title">타이푼</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3674,6 +3824,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>F14</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -3687,6 +3838,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Stealth F14</h2>
+        <span class="sub-title">스텔스 F14</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3700,6 +3852,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SU47</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -3713,6 +3866,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Blackbird</h2>
+        <span class="sub-title">블랙버드</span>
         <div class="info-item">가치: 15K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3726,6 +3880,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>SU24</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4.5/10</div>
@@ -3739,6 +3894,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Raptor</h2>
+        <span class="sub-title">랩터</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 5/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3752,6 +3908,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>FC31</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3765,6 +3922,7 @@
       <img class="image" src="https://i.imgur.com/zclfqKJ.png">
       <div class="info">
         <h2>Yamato</h2>
+        <span class="sub-title">야마토</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 3/10</div>
@@ -3778,6 +3936,7 @@
       <img class="image" src="https://i.imgur.com/wOvZ0mX.png">
       <div class="info">
         <h2>NC</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 3/10</div>
@@ -3791,6 +3950,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss NC</h2>
+        <span class="sub-title">보스 NC</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3804,6 +3964,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Interceptor</h2>
+        <span class="sub-title">인터셉터</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3817,6 +3978,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Patria</h2>
+        <span class="sub-title">파트리아</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3830,6 +3992,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Super Laser Truck</h2>
+        <span class="sub-title">슈퍼 레이저 트럭</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3843,6 +4006,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Minigun Edjer</h2>
+        <span class="sub-title">미니건 에저</span>
         <div class="info-item">가치: 2K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3856,6 +4020,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Sea Tank</h2>
+        <span class="sub-title">씨 탱크</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3869,6 +4034,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Pyro Tank</h2>
+        <span class="sub-title">파이로 탱크</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3882,6 +4048,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Volk</h2>
+        <span class="sub-title">폴크</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3895,6 +4062,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Motorbike</h2>
+        <span class="sub-title">모터바이크</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3908,6 +4076,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Railgun Car</h2>
+        <span class="sub-title">레일건 카</span>
         <div class="info-item">가치: 5K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3920,7 +4089,8 @@
     <div class="card">
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
-        <h2>Fla Halftrack</h2>
+        <h2>Flak Halftrack</h2>
+        <span class="sub-title">플랙 하프트랙</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 6/10</div>
@@ -3934,6 +4104,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Striker</h2>
+        <span class="sub-title">스트라이커</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3947,6 +4118,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Katyusha</h2>
+        <span class="sub-title">카츄샤</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3960,6 +4132,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Boss Stormer</h2>
+        <span class="sub-title">보스 스토머</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3973,6 +4146,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>PL-01</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 3/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -3985,7 +4159,8 @@
     <div class="card">
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
-        <h2>Phanther</h2>
+        <h2>Panther</h2>
+        <span class="sub-title">판터</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -3999,6 +4174,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>Challenger</h2>
+        <span class="sub-title">챌린저</span>
         <div class="info-item">가치: 1K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 4/10</div>
@@ -4012,6 +4188,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>S-tank Barrage</h2>
+        <span class="sub-title">S-tank 버라지</span>
         <div class="info-item">가치: 3K</div>
         <div class="info-item">수요: 4/10</div>
         <div class="info-item">희귀성: 5/10</div>
@@ -4025,6 +4202,7 @@
       <img class="image" src="https://i.imgur.com/SQBAT6b.png">
       <div class="info">
         <h2>Attack Drone</h2>
+        <span class="sub-title">어택 드론</span>
         <div class="info-item">가치: 500</div>
         <div class="info-item">수요: 1/10</div>
         <div class="info-item">희귀성: 3/10</div>
@@ -4038,6 +4216,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>M10 Booker</h2>
+        <span class="sub-title">M10 부커</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
@@ -4051,6 +4230,7 @@
       <img class="image" src="https://i.imgur.com/ebWDixn.png">
       <div class="info">
         <h2>TKS-20</h2>
+        <span class="sub-title">-</span>
         <div class="info-item">가치: 불확실</div>
         <div class="info-item">수요: 불확실</div>
         <div class="info-item">희귀성: 불확실</div>
